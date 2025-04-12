@@ -1,0 +1,15 @@
+<!-- Slides of 3 images -->
+        <section class="optical-carousel">
+            <div class="carousel-track">
+                <div class="carousel-frame">
+                    <img src="images/sliding-1.png" alt="Eyeglass Model 1">
+                </div>
+                <div class="carousel-frame">
+                    <img src="images/sliding-2.png" alt="Eyeglass Model 2">
+                </div>
+                <div class="carousel-frame">
+                    <img src="images/sliding-3.png" alt="Eyeglass Model 3">
+                </div>
+                
+            </div>
+        </section>
