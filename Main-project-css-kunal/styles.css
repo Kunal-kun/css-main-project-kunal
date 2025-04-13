@@ -11,15 +11,15 @@ body {
     line-height: 1.6;
     color: #333;
     background-color: #f4f4f4;
-    background-image: url('images/background.jpg'); /* Ensure this path is correct */
+    background-image: url('images/background.jpg'); 
     background-size: contain;
-    background-position: center; /* Center the background image */
-    padding-top: 90px; /* Adjust this padding to match the height of the headers */
+    background-position: center; 
+    padding-top: 90px; 
 }
 
 /* Header Styling */
 .optica-header {
-    background: rgba(93, 148, 130, 0.5);
+    background: rgba(4, 100, 121, 0.5);
     color: #fff;
     height: 40px;
     display: flex;
@@ -34,17 +34,44 @@ body {
     margin: 0;
     padding: 0;
 }
+/* Top Image Section */
+.optica-top-image {
+    width: 100%;
+    height: 300px;
+    margin-top: 80px;
+    background: url('images/background-cut.jpg') no-repeat center center;
+    background-size: contain;
+    transition: transform 0.3s ease;
+}
+
+.optica-top-image:hover {
+    transform: scale(1.05);
+}
+
+/* Hero Section */
 .hero-optical {
     display: flex;
     flex-direction: column;
-    justify-content: center;  /* vertical center */
-    align-items: center;      /* horizontal center */
-    height: 20vh;            /* full screen height */
-    text-align: center;
-    background: url('images/your-background.jpg') no-repeat center center/cover;
-    color: #08574a; /* or your preferred color */
+    justify-content: center;
+    align-items: center;    
+    text-align: center;   
     padding: 2rem;
-  }
+    gap: 1rem;
+    background-color: #e3f5f7; /* optional for contrast if no image */
+}
+
+/* Headings inside Hero */
+.hero-optical .optical-heading {
+    color: rgba(6, 96, 116, 0.8);
+    transition: color 0.5s ease;
+}
+
+.hero-optical .optical-heading:hover {
+    color: #7fc8ea;
+}
+
+
+
   
 /* Logo */
 .optica-logo img {
@@ -80,11 +107,7 @@ body {
     font-family: "Montserrat", serif;
 }
 
-.optica-nav-link:hover,
-.optica-dropbtn:hover {
-    background: #575757;
-    border-radius: 3px;
-}
+
 
 .optica-dropdown {
     position: relative;
@@ -95,7 +118,7 @@ body {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: rgba(57, 138, 111, 0.685);
+    background-color: rgba(57, 134, 138, 0.685);
     min-width: 160px;
     box-shadow: 0 8px 16px rgba(103, 163, 145, 0.2);
     z-index: 10;
@@ -119,43 +142,9 @@ body {
     background-color: #f4f4f4;
 }
 
-/* Second Header (Promo Banner) */
-.optica-promo-banner {
-    background: rgba(56, 48, 48, 0.4);
-    color: #2a1dc1;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 40px;
-    left: 0;
-    width: 100%;
-    z-index: 1001;
-    overflow: hidden;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-}
 
-/* Promotional Text with Sliding Animation */
-.optica-promo-text {
-    font-size: 1.5em;
-    color: #fff;
-    white-space: nowrap;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    animation: slideRight 10s linear infinite;
-}
 
-/* Top Image Section */
-.optica-top-image {
-    margin-top: 80px; /* Adjust to push content below fixed headers */
-    height: 300px; /* Example height */
-    background: url('images/background-cut.jpg') no-repeat center center;
-    background-size: auto;
-}
+
 
 /* Optical Carousel Container */
 .optical-carousel {
@@ -169,7 +158,7 @@ body {
 /* Carousel Track */
 .carousel-track {
     display: flex;
-    width: 100%; /* Adjusted to ensure all 3 images fit in a row */
+    width: 100%; 
     animation: slide-animation 50s linear infinite; /* Apply animation here */
 }
 
@@ -177,7 +166,7 @@ body {
 .carousel-frame {
     width: 100%;
     flex: 0 0 auto;
-    height: 500px; /* Fixed height for each frame */
+    height: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -210,8 +199,8 @@ body {
 }
 
 /* Main Text Section */
-.main-text {
-    color: #fff;
+.main {
+    color: #a12b2b;
     height: 60vh;
     display: flex;
     flex-direction: column;
@@ -222,13 +211,13 @@ body {
 
 .main-text h1 {
     font-size: 3em;
-    color: rgb(2, 95, 87);
+    color: rgb(3, 95, 126);
 }
 
 .main-text p {
     font-size: 1.2em;
     margin: 20px 0;
-    color: rgb(2, 85, 71);
+    color:rgb(3, 95, 126);
     position: relative;
     animation: slideIn 1s ease-out;
 }
@@ -276,7 +265,7 @@ body {
     margin-bottom: 20px;
     font-family: "Montserrat", serif;
     font-size: 2.5em;
-    color: rgb(2, 95, 87);
+    color: rgb(10, 146, 174);
     animation: slideIn 1s ease-out;
 }
 
@@ -288,7 +277,7 @@ body {
 }
 
 .optical-item {
-    background: #f4f7f7;
+    background: #dffafa;
     padding: 10px;
     margin: 10px;
     border-radius: 5px;
@@ -297,6 +286,7 @@ body {
     width: 21%;
     transition: transform 0.3s ease;
 }
+
 
 .optical-item img {
     max-width: 100%;
@@ -422,12 +412,12 @@ body {
 .optical-info {
     display: flex;
     flex-direction: column;
-    justify-content: center;  /* Centers text vertically */
-    align-items: center;      /* Centers text horizontally */
-    text-align: center;       /* Ensures text is centered */
-    padding: 40px 20px;       /* Adjust for spacing around the content */
-    background-color: #f4f4f4; /* Light background for readability */
-    margin: 0 auto;           /* Optional, centers the section within the page */
+    justify-content: center;  
+    align-items: center;    
+    text-align: center;       
+    padding: 40px 20px;       
+    background-color: #d1ecf2;
+    margin: 0 auto;           
 }
 
 .optical-info h1 {
@@ -475,7 +465,7 @@ body {
 }
 
 .lens-faqs h3 {
-    color: #08574a;
+    color: #11b4b4;
     font-size: 24px;
     margin-bottom: 20px;
     transition: transform 0.3s ease;
@@ -490,7 +480,7 @@ body {
     margin-bottom: 15px;
     padding: 15px;
     border-radius: 8px;
-    background: linear-gradient(45deg, #abdad2, #f6f8f8c4);
+    background: linear-gradient(45deg, #a4e9f4, #f6f8f8c4);
     background-size: 200% 200%;
     color: #000000;
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-position 0.5s ease;
